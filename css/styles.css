@@ -1,0 +1,219 @@
+/*Основний колір тексту #212121
+Другорядний колір тексту #757575
+Акцент #2196F3
+Лого основний колір #2196F3
+Лого Шапка #000000
+Лого Футер #FFFFFF
+Другорядний світлий колір тексту #FFFFFF
+Другорядний світлий колір тексту + прозорість rgba(255, 255, 255, 0.6)
+Фон основний колір #FFFFFF
+Фон темний колір #2F303A
+Фон світлий колір #F5F4FA
+Колір рамки #ECECEC;
+Активна кнопка #188CE8
+Основний шрифт тексту Roboto, sans-serif;
+Шрифт логотипу Raleway, sans-serif; */
+
+:root {
+    --pimary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-logo-color: #2196F3;
+    --header-logo-color: #000000;
+    --footer-logo-color: #FFFFFF;
+    --primary-light-text-color: #FFFFFF;
+    --secondary-light-text-color: rgba(255, 255, 255, 0.6);
+    --pimary-bg-color: #FFFFFF;
+    --dark-bg-color: #2F303A;
+    --light-bg-color: #F5F4FA;
+    --border-color: #ECECEC;
+    --accent-btn: #188CE8;
+    --pimary-font-text: Roboto, sans-serif;
+    --font-logo: Raleway, sans-serif;
+}
+
+body {
+    color: var(--pimary-text-color);
+    background-color: var(--pimary-bg-color);
+
+    font-family: var(--pimary-font-text);
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+/* Лого */
+.logo-dark {
+    color: var(--header-logo-color);
+}
+
+.logo-light {
+    color: var(--footer-logo-color);
+}
+
+.logo {
+    color: var(--primary-logo-color);
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+/* Навігація */
+.site-nav .link,
+.contacts .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contacts .link,
+.about-feature,
+.address,
+.team-post,
+.portfolio-post {
+    color: var(--secondary-text-color);
+}
+
+/* Послуга */
+.service,
+.page-footer {
+    background-color: var(--dark-bg-color);
+}
+
+.service,
+.service-btn,
+.address-list .address-link .link {
+    color: var(--primary-light-text-color);
+}
+
+
+.service-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.service-btn {
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.service-btn:hover,
+.service-btn:focus {
+    background-color: var(--accent-btn);
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.about-feature,
+.address {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.team-section {
+    background-color: var(--light-bg-color);
+}
+
+.team-item {
+    background-color: var(--pimary-bg-color);
+    width: 270px;
+    height: 368px;
+    left: 215px;
+}
+
+.team-title,
+.team-post  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* Підвал */
+.address {
+    font-style: normal;
+}
+
+.address-list .link {
+    color: var(--secondary-light-text-color);
+    text-decoration: none;
+} 
+
+.site-nav .link:hover,
+.contacts .link:hover,
+.site-nav .link:focus,
+.contacts .link:focus,
+.link.current,
+.address-list .link:hover,
+.address-list .link:focus {
+    color: var(--accent-color);
+} 
+
+/* Портфоліо */
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-size: 16px;
+    cursor: pointer;
+
+    background-color: var(--light-bg-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--accent-color);
+}
+
+
+.portfolio-link {
+    text-decoration: none;
+}
+
+.portfolio-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--pimary-text-color);
+}
+
+.portfolio-post {
+    line-height: 1.88;
+}
+
+
+
+
