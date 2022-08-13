@@ -79,6 +79,8 @@ body {
 }
 
 /* Оформлення Контактів, Чим займаємось, Команди, Адреси і Портфоліо */
+.site-nav .link {color: inherit;}
+
 .contacts .link,
 .about-feature,
 .team-post,
@@ -210,5 +212,5 @@ body {
 .portfolio-title {
     font-size: 18px;
     line-height: 2;
-    color: var(--pimary-text-color);
+    color: var(--pimary-text-color); 
 }
